@@ -22,13 +22,15 @@ module.exports = {
         });
       }
 
-      console.log(
-        "successfull payments made to providers at::",
-        new Date().toString()
-      );
+      let message =
+        "successfull payments made to providers at::" + new Date().toString();
+
+      await sails.helpers.sendSms.with({ message: message });
+
       return;
     } catch (error) {
       console.log(error.message);
+      return;
     }
   },
 };

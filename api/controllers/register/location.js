@@ -81,6 +81,7 @@ module.exports = {
           message: "street has already registered.",
         });
       }
+
       // -- Catching any other error.
       return exits.failure({
         success: false,

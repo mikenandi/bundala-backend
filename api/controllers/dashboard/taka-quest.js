@@ -1,5 +1,3 @@
-const { serializeUser } = require("passport");
-
 module.exports = {
   friendlyName: "Taka quest",
 

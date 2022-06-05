@@ -5,6 +5,14 @@ module.exports = {
     "Automated action that will responsible for sending bills to all payers.",
 
   fn: async function (inputs) {
-    console.log("sending sms.");
+    try {
+      console.log("sending sms.....");
+      await sails.helpers.sendSms();
+
+      return;
+    } catch (error) {
+      console.log(error.message);
+      return;
+    }
   },
 };

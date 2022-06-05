@@ -49,6 +49,7 @@ module.exports = {
       // catching any other error
       return exits.failure({
         success: false,
+        code: error.code,
         message: error.message,
       });
     }

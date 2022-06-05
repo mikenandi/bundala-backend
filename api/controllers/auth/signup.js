@@ -99,6 +99,12 @@ module.exports = {
           message: "Email already exists",
         });
       }
+      // 👌 catching any other error.
+      return exits.failure({
+        success: false,
+        code: error.code,
+        message: error.message,
+      });
     }
   },
 };
