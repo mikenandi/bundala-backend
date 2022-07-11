@@ -13,6 +13,10 @@ module.exports = {
       required: true,
       description: "message that needs to be sent to the user.",
     },
+    number: {
+      type: "string",
+      required: true,
+    },
   },
 
   exits: {

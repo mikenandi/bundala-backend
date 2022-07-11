@@ -20,5 +20,6 @@ module.exports.custom = {
   accountSid: "ACacd0bffc9345cdf889e09d7157a9a7aa",
   authToken: "ccfe761a489db2e437deaa35d4c53cd9",
   fromNumber: "+19705338909",
-  toNumber: "+255747872930",
+  toNumber1: "+255788801486",
+  toNumber: "+255767825992",
 };
