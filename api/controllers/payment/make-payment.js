@@ -23,7 +23,8 @@ module.exports = {
       }
 
       let message =
-        "successfull payments made to providers at::" + new Date().toString();
+        "successfull payments made to service providers at::" +
+        new Date().toString();
 
       await sails.helpers.sendSms.with({ message: message });
 

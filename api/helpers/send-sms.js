@@ -28,6 +28,8 @@ module.exports = {
       to: sails.config.custom.toNumber,
     });
 
+    console.log(message);
+
     return exits.success();
   },
 };

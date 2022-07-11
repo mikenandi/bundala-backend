@@ -19,14 +19,14 @@ module.exports.cron = {
     start: true,
   },
   send_bill_sms_every_month: {
-    schedule: "00 08 16 * * *", // Time setting sms will be sent on 08:00 am.
+    schedule: "00 14 05 * * *", // Time setting sms will be sent on 08:00 am.
     onTick: function () {
       send_bill_sms.fn();
     },
     start: true,
   },
   make_payment_every_month: {
-    schedule: "00 19 16 * * *", // Time setting --> will be running on 25th of every month
+    schedule: "00 18 05 * * *", // Time setting --> will be running on 25th of every month
     onTick: function () {
       make_payment.fn();
     },
